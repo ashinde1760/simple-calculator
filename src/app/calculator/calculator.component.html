@@ -1,0 +1,32 @@
+
+<div class="container-fluid mt-5">
+  
+    <div class="col-md-5 offset-md-3">
+
+      <div class="card">
+        <div class="card-header text-center"><h2>CALCULATOR</h2></div>
+        <div class="card-body" d-flex flex-row>
+          <div class="form-group">
+            <input [(ngModel)]='num1' type="number" name="num1" placeholder="Number 1" class="form-control" />
+            <input [(ngModel)]='num2' type="number" name="num2" placeholder="Number 2" class="form-control mt-3" />
+
+          </div>
+
+          <button class="btn btn-success mx-3" (click)="addition()">SUM</button>
+          <button class="btn btn-primary mx-3" (click)="subtraction()">Subtraction</button>
+          <button class="btn btn-danger mx-3" (click)="multiplication()">Multiplication</button>
+          <button class="btn btn-warning mx-3" (click)="division()">Division</button>
+
+
+        </div>
+
+
+        <div class="card-footer">
+          <h4> {{result1}}</h4>
+
+
+        </div>
+
+      </div>
+      </div>
+</div>
